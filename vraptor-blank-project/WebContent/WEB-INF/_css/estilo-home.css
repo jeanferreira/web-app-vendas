@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+	background-color: #dddddd;
+}
+
+div#interface {
+	background-color: #ffffff;
+	height: 640px;
+	width: 800px;
+	margin: auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	background: url("../_imagens/fundo-azul.jpg");
+}
+
+fieldset#usuario {
+	position: absolute;
+	background-color: #ffffff;
+	margin: 200px auto 200px 280px;
+	padding: 10px;
+	width: 250px;					
+	background: url("../_imagens/fundo-azul.jpg");
+	color: rgba(0, 0, 0, .6);
+}
+
+fieldset#usuario input {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+fieldset#usuario input:hover {
+	background-color: #dddddd;
+}
