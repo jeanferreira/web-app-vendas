@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="interface">
-		<form id="login"  action="usuario/logar">
+		<form id="login" method="post"  action="usuario/logar">
 			<fieldset id="usuario">
 				<legend>Identificação de Usuário</legend>
 				<p><label for="cLogin">Login:</label><input type="text" name="u.login" id="cLogin" size="25"/></p>
