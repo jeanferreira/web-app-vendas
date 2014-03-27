@@ -16,8 +16,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Usuario u = new Usuario();
-		u.setLogin("jeansf");
-		u.setSenha("jean123");
+		u.setLogin("joaoas");
+		u.setSenha("joao123");
 		
 		AnnotationConfiguration conf = new AnnotationConfiguration();
 		conf.configure();

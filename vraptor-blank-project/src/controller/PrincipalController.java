@@ -16,4 +16,8 @@ public class PrincipalController {
 	public void boasVindas() {
 		
 	}
+	
+	public void error() {
+		
+	}
 }
