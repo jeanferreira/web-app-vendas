@@ -27,6 +27,10 @@ public class UsuarioController {
 		}
 	}
 	
+	public void sair() {
+		result.redirectTo(UsuarioController.class).login();
+	}
+	
 	@Path("/")
 	public void login() {
 		
