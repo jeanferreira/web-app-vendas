@@ -4,6 +4,7 @@ import dao.UsuarioDAO;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
+import br.com.caelum.vraptor.view.Results;
 
 @Resource
 public class UsuarioController {
@@ -19,7 +20,7 @@ public class UsuarioController {
 	
 	public void connect(String login, String pass) {
 		usDAO.connect(login, pass);
-		result.redirectTo(PrincipalController.class).boasVindas();
+		result.use(Results.logic()).forwardTo(PrincipalController.class).boasVindas();
 	}
 	
 	@Path("/")

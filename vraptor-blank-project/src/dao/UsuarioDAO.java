@@ -24,6 +24,7 @@ public class UsuarioDAO {
 			if (lista.equals(login) && lista.equals(pass)) {
 				;
 			token = true;
+			System.out.println(token);
 			} 
 		}
 
