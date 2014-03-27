@@ -9,11 +9,11 @@
 </head>
 <body>
 	<div id="interface">
-		<form id="login"  action="usuario/connect">
+		<form id="login"  action="usuario/logar">
 			<fieldset id="usuario">
 				<legend>Identificação de Usuário</legend>
-				<p><label for="cLogin">Login:</label><input type="text" name="login" id="cLogin" size="25"/></p>
-				<p><label for="cSenha">Senha:</label><input type="password" name="pass" id="cSenha" size="25"/></p>
+				<p><label for="cLogin">Login:</label><input type="text" name="u.login" id="cLogin" size="25"/></p>
+				<p><label for="cSenha">Senha:</label><input type="password" name="u.senha" id="cSenha" size="25"/></p>
 				<button type="submit">Entrar</button>
 			</fieldset>
 		</form>

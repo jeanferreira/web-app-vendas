@@ -15,19 +15,17 @@ public class UsuarioDAO {
 	}
 
 	@SuppressWarnings({ "unused", "unchecked" })
-	public boolean connect(String login, String pass) {
+	public boolean connect(Usuario u) {
 		boolean token = false;
 		List<Usuario> lista = new ArrayList<Usuario>();
 		lista = FabricaSessao.getSession().createCriteria(Usuario.class).list();
 
-		for (Usuario u : lista) {
-			if (lista.equals(login) && lista.equals(pass)) {
-				;
-			token = true;
-			System.out.println(token);
-			} 
+		for(int i = 0; i<lista.size(); i++){
+			if(lista.get(i).getLogin().equals(u.getLogin()) && 
+					lista.get(i).getSenha().equals(u.getSenha())) {
+				token = true;
+			}
 		}
-
 		return token;
 	}
 
