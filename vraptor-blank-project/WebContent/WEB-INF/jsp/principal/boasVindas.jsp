@@ -27,7 +27,7 @@
 			</nav>
 		</header>
 		<div id="corpo">
-			corpo
+			<a href="sair">Sair</a>
 			<footer id="rodape">
 				
 			</footer>
