@@ -11,15 +11,15 @@
 		<fieldset>
 			<legend>Cadastro</legend>
 			<p>
-				<label for="cNome">Nome:<input type="text" name="produto.nome" id="cNome"/></label>
+				<label for="cNome">Nome:<input type="text" name="p.nome" id="cNome"/></label>
 			</p>
 			<p>
-				<label for="cDescricao">Descrição:<textarea name="produto.descricao" id="cDescricao"></textarea></label>
+				<label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao"></textarea></label>
 			</p>
 			<p>
-				<label for="cPreco">Preço R$:<input type="text" name="produto.preco" id="cPreco"/></label>
+				<label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco"/></label>
 			</p>
-			<input type="submit" value="Cadastrar"/>
+			<button type="submit">Cadastrar</button>
 		</fieldset>
 	</form>
 </body>
