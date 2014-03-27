@@ -8,17 +8,16 @@ import org.hibernate.cfg.AnnotationConfiguration;
 
 
 import model.Produto;
+import model.Usuario;
 
 public class Main {
 
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		
-		Produto p = new Produto();
-		
-		p.setNome("Achocolatado");
-		p.setDescricao("Achocolatado Nescau 500g");
-		p.setPreco(5.29);
+		Usuario u = new Usuario();
+		u.setLogin("jeansf");
+		u.setSenha("jean123");
 		
 		AnnotationConfiguration conf = new AnnotationConfiguration();
 		conf.configure();
@@ -26,7 +25,7 @@ public class Main {
 		Session s = f.openSession();
 		
 		Transaction tx = s.beginTransaction();
-		s.save(p);
+		s.save(u);
 		tx.commit();
 
 	}
