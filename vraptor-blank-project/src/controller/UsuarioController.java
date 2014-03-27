@@ -19,6 +19,7 @@ public class UsuarioController {
 	
 	public void connect(String login, String pass) {
 		usDAO.connect(login, pass);
+		result.redirectTo(PrincipalController.class).boasVindas();
 	}
 	
 	@Path("/")
