@@ -21,7 +21,7 @@ div#conteudo {
 }
 
 header#cabecalho {
-	background: url("../_imagens/fundo-azul.jpg");
+	background: url("fundo-azul.jpg");
 	border-bottom: 1px solid rgba(0,0,0, 0.5);
 	font-family: 'Cutive Mono', sans-serif;
 	height: 107px;
