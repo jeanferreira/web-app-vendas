@@ -7,7 +7,7 @@ body {
 div#interface {
 	background-color: #ffffff;
 	height: 640px;
-	width: 800px;
+	width: 900px;
 	margin: auto;
 	box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
 	background: url("fundo-azul.jpg");
