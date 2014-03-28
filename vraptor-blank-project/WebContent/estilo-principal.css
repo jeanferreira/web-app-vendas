@@ -1,0 +1,94 @@
+@CHARSET "ISO-8859-1";
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+body {
+	background-color: #dddddd;
+
+}
+
+a {
+	
+}
+
+div#conteudo {
+	background-color: #ffffff;
+	height: 640px;
+	width: 900px;
+	margin: -20px auto -10px auto;
+	box-shadow: 0px 5px 5px rgba(0,0,0, .5);
+
+}
+
+header#cabecalho {
+	background: url("../_imagens/fundo-azul.jpg");
+	border-bottom: 1px solid rgba(0,0,0, 0.5);
+	font-family: 'Cutive Mono', sans-serif;
+	height: 107px;
+
+}
+
+header#cabecalho h1 {
+	margin: 20px;
+}
+
+header#cabecalho h2 {
+	margin: 20px;
+}
+
+nav#menu-principal {
+	float: left;
+}
+
+nav#menu-principal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: -1px;
+	
+}
+
+nav#menu-principal ul li {
+	float: left;
+	position: relative;
+	display: block;
+}
+
+nav#menu-principal ul li a {
+	color: #555;
+	background-color: #1E90FF;
+	text-decoration: none;
+	margin: 0 1px;
+	padding: 5px 10px;
+	display: block;
+}
+
+nav#menu-principal li ul {
+	display: none;
+}
+
+nav#menu-principal ul li a:hover {
+	background-color: #066;
+	color: #ffffff;
+}
+
+nav#menu-principal li:hover ul {
+	display: block;
+	position: relative;
+}
+
+nav#menu-principal li:hover li {
+	float: none;
+	font-size: 12pt;
+}
+
+nav#menu-principal li:hover a {
+	background: #333;
+	color: #ffffff;
+}
+
+div#corpo {
+	background-color: #dddddd;
+	margin-top: 29px;
+	border-top: 1px solid rgba(0,0,0, .5);
+}
