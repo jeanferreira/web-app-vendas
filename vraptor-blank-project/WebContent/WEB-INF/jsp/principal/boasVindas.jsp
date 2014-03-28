@@ -21,14 +21,31 @@
   						<ul class="sub-menu">
   							<span><li><a href="#">Cadastrar</a></li></span>
   							<span><li><a href="#">Listar</a></li></span>
+  							<span><li><a href="#">Alterar</a></li></span>
+  							<span><li><a href="#">Remover</a></li></span>
   						</ul>
   					</li>
-  					<li><a href="#">Produtos</a></li>
+  					<li><a href="#">Produtos</a>
+  						<ul class="sub-menu">
+  							<span><li><a href="#">Cadastrar</a></li></span>
+  							<span><li><a href="#">Listar</a></li></span>
+  							<span><li><a href="#">Alterar</a></li></span>
+  							<span><li><a href="#">Remover</a></li></span>
+  						</ul>
+  					</li>
+  					<li><a href="#">Venda</a>
+  						<ul class="sub-menu">
+  							<span><li><a href="#">Nova Venda</a></li></span>
+  							<span><li><a href="#">Pesquisar</a></li></span>
+  						</ul>
+  					</li>
+  						
+  					<li><span><a href="sair">Sair</a></span></li>
 				</ul>
 			</nav>
 		</header>
 		<div id="corpo">
-			<a href="sair">Sair</a>
+			
 			<footer id="rodape">
 				
 			</footer>

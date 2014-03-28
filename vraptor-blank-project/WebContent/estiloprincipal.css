@@ -1,5 +1,5 @@
 @CHARSET "ISO-8859-1";
-
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
 
 
 body {
@@ -25,6 +25,7 @@ header#cabecalho {
 	border-bottom: 1px solid rgba(0,0,0, 0.5);
 	font-family: 'Cutive Mono', sans-serif;
 	height: 107px;
+	font-size: 13pt;
 
 }
 
@@ -38,6 +39,7 @@ header#cabecalho h2 {
 
 nav#menu-principal {
 	float: left;
+	width: 900px;
 }
 
 nav#menu-principal ul {
