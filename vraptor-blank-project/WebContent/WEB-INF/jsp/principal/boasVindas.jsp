@@ -45,9 +45,13 @@
 			</nav>
 		</header>
 		<div id="corpo">
+			<div id="conteudo-corpo">
+				Conteudo-Corpo
+							
+			</div>
 			
 			<footer id="rodape">
-				
+				rodape
 			</footer>
 		</div>
 	</div>
