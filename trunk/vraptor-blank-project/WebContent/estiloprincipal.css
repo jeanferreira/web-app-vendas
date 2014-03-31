@@ -47,6 +47,7 @@ nav#menu-principal ul {
 	margin: 0;
 	padding: 0;
 	margin-left: -1px;
+	z-index: 1;
 	
 }
 
@@ -63,6 +64,7 @@ nav#menu-principal ul li a {
 	margin: 0 1px;
 	padding: 5px 10px;
 	display: block;
+	transition: background-color 1s;
 }
 
 nav#menu-principal li ul {
@@ -87,10 +89,24 @@ nav#menu-principal li:hover li {
 nav#menu-principal li:hover a {
 	background: #333;
 	color: #ffffff;
+	
 }
 
 div#corpo {
-	background-color: #dddddd;
+	background-color: #ffffff;
 	margin-top: 29px;
 	border-top: 1px solid rgba(0,0,0, .5);
+	height: 502px;
+	position: absolute;
+	width: 900px;
+}
+
+footer#rodape {
+	background-color: #F5F5F5;
+	margin-top: 400px;
+	height: 85px;
+	position: absolute;
+	width: 900px;
+	border-top: 1px solid rgba(0,0,0, .5);
+	
 }
