@@ -27,7 +27,7 @@
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
   					</li>
-  					<li onmouseover="mudaFoto(../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
+  					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
   							<span><li><a href="#">Cadastrar</a></li></span>
   							<span><li><a href="#">Listar</a></li></span>
@@ -48,7 +48,6 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				Conteudo-Corpo
 							
 			</div>
 			
