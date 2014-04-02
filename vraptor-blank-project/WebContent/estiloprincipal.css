@@ -29,6 +29,12 @@ header#cabecalho {
 
 }
 
+header#cabecalho img {
+	position: absolute;
+	right: 240px;
+	top: 10px;
+}
+
 header#cabecalho h1 {
 	margin: 20px;
 }
