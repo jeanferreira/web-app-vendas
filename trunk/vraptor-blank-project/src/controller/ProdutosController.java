@@ -28,7 +28,7 @@ public class ProdutosController {
 		result.redirectTo(ProdutosController.class).lista();
 	}
 	
-	public void formulario() {
+	public void formularioProduto() {
 		
 	}
 }
