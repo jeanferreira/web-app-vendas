@@ -5,8 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
+<link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Softex</title>
+<title>Produtos</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -29,7 +30,7 @@
   					</li>
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
-  							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
+  							<span><li><a href="#">Cadastrar</a></li></span>
   							<span><li><a href="#">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
@@ -42,18 +43,25 @@
   						</ul>
   					</li>
   						
-  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="..usuaro/sair">Sair</a></span></li>
+  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="../usuario/sair">Sair</a></span></li>
 				</ul>
 			</nav>
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-							
+				<form method="post" action="insereProduto">
+					<fieldset>
+						<legend>Cadastro de Produtos</legend>
+						<p><label for="cNome">Nome:<input type="text" name="p.nome" id="cNome"/></label></p>
+						<p><label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao"></textarea></label></p>
+						<p><label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco"/></label></p>
+						
+						<button type="submit">Cadastrar</button>
+						
+					</fieldset>
+				</form>
 			</div>
 			
-			<footer id="rodape">
-				rodape
-			</footer>
 		</div>
 	</div>
 </body>
