@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+form {
+	width: 650px;
+	margin: auto;
+}
+
+input {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 11pt;
+	background-color: rgba(255,255,255, .8);
+	margin: auto;
+	text-transform: uppercase;
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+legend {
+	color: #888888;
+	font-weight: bold;
+	font-size: 13pt;
+	font-size: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+
+label {
+	display: block;
+	width: 100px;
+}

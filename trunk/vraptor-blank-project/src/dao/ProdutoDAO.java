@@ -10,24 +10,26 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import br.com.caelum.vraptor.ioc.Component;
 import model.*;
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings({ "deprecation", "unused" })
 @Component
 public class ProdutoDAO {
+	
+	private final FabricaSessao fabrica;
+	
+	public ProdutoDAO(FabricaSessao fabrica) {
+		this.fabrica = fabrica;		
+	}
 
 	@SuppressWarnings("unchecked")
 	public List<Produto> listar() {
 		return FabricaSessao.getSession().createCriteria(Produto.class).list();
 	}
 
-	public void insere(Produto p) {
-		AnnotationConfiguration conf = new AnnotationConfiguration();
-		conf.configure();
-		SessionFactory f = conf.buildSessionFactory();
-		Session s = f.openSession();
-
+	@SuppressWarnings("static-access")
+	public void insere(Produto p) {	
+		Session s = fabrica.getSession();
 		Transaction tx = s.beginTransaction();
 		s.save(p);
 		tx.commit();
-
 	}
 }

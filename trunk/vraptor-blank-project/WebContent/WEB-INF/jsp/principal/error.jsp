@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-	<h3>Usuário não Cadastrado</h3>
+	<h3>Login e/ou Senha Inválidos</h3>
 <body>
 
 </body>
