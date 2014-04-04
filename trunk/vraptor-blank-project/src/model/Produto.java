@@ -12,6 +12,7 @@ public class Produto {
 	@Id
 	@GeneratedValue
 	private Integer id;
+
 	private String nome;
 	private String descricao;
 	private Double preco;
