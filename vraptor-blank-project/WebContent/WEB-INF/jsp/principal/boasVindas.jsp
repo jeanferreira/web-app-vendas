@@ -42,7 +42,7 @@
   						</ul>
   					</li>
   						
-  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="..usuaro/sair">Sair</a></span></li>
+  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="../usuario/sair">Sair</a></span></li>
 				</ul>
 			</nav>
 		</header>
