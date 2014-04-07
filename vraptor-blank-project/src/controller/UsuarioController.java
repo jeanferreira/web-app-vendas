@@ -46,4 +46,22 @@ public class UsuarioController {
 	public void login() {
 
 	}
+
+	public void formularioUsuario() {
+
+	}
+
+	public void cadUser(Usuario u) {
+		if (u.getLogin() == null || u.getSenha() == null) {
+			validator.add(new ValidationMessage("Erro-",
+					"Usuário e/ou Senha Não Podem Ser Vazios!"));
+			validator.onErrorUsePageOf(UsuarioController.class)
+					.formularioUsuario();
+		} else {
+			usDAO.addUsuario(u);
+			result.redirectTo(UsuarioController.class).login();
+
+		}
+
+	}
 }

@@ -3,6 +3,9 @@ package dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
 import model.Usuario;
 
 import br.com.caelum.vraptor.ioc.Component;
@@ -16,8 +19,12 @@ public class UsuarioDAO {
 		this.fabrica = fabrica;		
 	}
 
-	public void addUsuario() {
-
+	@SuppressWarnings("static-access")
+	public void addUsuario(Usuario u) {
+		Session s = fabrica.getSession();
+		Transaction tx = s.beginTransaction();
+		s.save(u);
+		tx.commit();
 	}
 
 	
