@@ -1,5 +1,7 @@
 package controller;
 
+import java.util.List;
+
 import model.Cliente;
 import dao.ClienteDAO;
 import br.com.caelum.vraptor.Resource;
@@ -21,7 +23,15 @@ public class ClienteController {
 		this.result.redirectTo(PrincipalController.class).boasVindas();
 	}
 	
+	public List<Cliente> listaCliente(String nome) {
+		return cDAO.lista(nome);
+	}
+	
 	public void formularioCliente() {
+		
+	}
+	
+	public void listacliente() {
 		
 	}
 }
