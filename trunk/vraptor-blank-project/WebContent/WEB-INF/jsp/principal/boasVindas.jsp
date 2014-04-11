@@ -22,7 +22,7 @@
   					<li onmouseover="mudaFoto('../clientes.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Clientes</a>
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
-  							<span><li><a href="../cliente/listacliente">Listar</a></li></span>
+  							<span><li><a href="../cliente/lista">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
