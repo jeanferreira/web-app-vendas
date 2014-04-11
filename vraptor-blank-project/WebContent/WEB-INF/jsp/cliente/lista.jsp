@@ -23,8 +23,8 @@
   					<li onmouseover="mudaFoto('../home.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="../principal/boasVindas">Home</a></li>
   					<li onmouseover="mudaFoto('../clientes.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Clientes</a>
   						<ul class="sub-menu">
-  							<span><li><a href="#">Cadastrar</a></li></span>
-  							<span><li><a href="#">Listar</a></li></span>
+  							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
+  							<span><li><a href="../cliente/lista">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -58,6 +58,7 @@
 						<table border="1" style="width:300px">
 							<thead>
 								<tr>
+									<th>Cod</th>
 									<th>Nome</th>
 									<th>Cpf</th>
 									<th>Email</th>
@@ -67,12 +68,14 @@
 							</thead>
 							<tbody>
 								<c:forEach items="${clienteList}" var="cliente">
+									
 									<tr>
-										<td>${cliente.nome }</td>
+										<td>${cliente.id}</td>
+										<td>${cliente.nome}</td>
 										<td>${cliente.cpf}</td>
-										<td>${cliente.email }</td>
-										<td>${cliente.telefone }</td>
-										<td>${cliente.endereco }</td>
+										<td>${cliente.email}</td>
+										<td>${cliente.telefone}</td>
+										<td>${cliente.endereco}</td>
 									</tr>
 								</c:forEach>
 							</tbody>
@@ -80,7 +83,6 @@
 					</fieldset>
 				</form>
 			</div>
-			
 		</div>
 	</div>
 </body>

@@ -20,9 +20,9 @@ public class ProdutoDAO {
 		this.fabrica = fabrica;		
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "static-access" })
 	public List<Produto> listar() {
-		return FabricaSessao.getSession().createCriteria(Produto.class).list();
+		return fabrica.getSession().createCriteria(Produto.class).list();
 	}
 
 	@SuppressWarnings("static-access")

@@ -31,7 +31,7 @@ public class ClienteController {
 		
 	}
 	
-	public void listacliente() {
+	public void lista() {
 		
 	}
 }
