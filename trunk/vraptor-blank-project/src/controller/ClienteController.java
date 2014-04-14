@@ -7,6 +7,7 @@ import dao.ClienteDAO;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 
+
 @Resource
 public class ClienteController {
 	
@@ -23,7 +24,8 @@ public class ClienteController {
 		this.result.redirectTo(PrincipalController.class).boasVindas();
 	}
 	
-	public List<Cliente> listaCliente(String nome) {
+	public List<Cliente> busca(String nome) {
+		result.include("nome",nome);
 		return cDAO.lista(nome);
 	}
 	
@@ -34,4 +36,5 @@ public class ClienteController {
 	public void lista() {
 		
 	}
+	
 }
