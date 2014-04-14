@@ -50,36 +50,11 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form id="lista-cliente" method="get" action="listaCliente">
+				<form id="lista-cliente" method="get" action="<c:url value="/cliente/busca"/>">
 					<fieldset id="form-lista-cliente">
 						<legend>Cliente</legend>
 						<button type="submit">Pesquisar</button>
 						<input type="text" id="cPesquisa" name="nome" size="70">
-						<table border="1" style="width:300px">
-							<thead>
-								<tr>
-									<th>Cod</th>
-									<th>Nome</th>
-									<th>Cpf</th>
-									<th>Email</th>
-									<th>Telefone</th>
-									<th>Endereço</th>
-								</tr>
-							</thead>
-							<tbody>
-								<c:forEach items="${clienteList}" var="cliente">
-									
-									<tr>
-										<td>${cliente.id}</td>
-										<td>${cliente.nome}</td>
-										<td>${cliente.cpf}</td>
-										<td>${cliente.email}</td>
-										<td>${cliente.telefone}</td>
-										<td>${cliente.endereco}</td>
-									</tr>
-								</c:forEach>
-							</tbody>
-						</table>
 					</fieldset>
 				</form>
 			</div>

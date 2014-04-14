@@ -16,6 +16,7 @@ import sun.misc.Cleaner;
 import com.sun.org.apache.regexp.internal.recompile;
 
 import model.Cliente;
+import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.ioc.Component;
 
 @SuppressWarnings({ "unused", "deprecation" })
@@ -43,8 +44,8 @@ public class ClienteDAO {
 	public List<Cliente> lista(String cnome) {
 		lista = new ArrayList<Cliente>();
 		lista = fabrica.getSession().createCriteria(Cliente.class)
-				.add(Restrictions.like("nome", "%" + cnome + "%")).list();
-		
+				.add(Restrictions.ilike("nome", cnome, MatchMode.ANYWHERE))
+				.list();
 		return lista;
 	}
 
