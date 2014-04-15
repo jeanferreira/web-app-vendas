@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Produtos</title>
+<title>Cliente</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -30,7 +31,7 @@
   					</li>
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
-  							<span><li><a href="#">Cadastrar</a></li></span>
+  							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
   							<span><li><a href="#">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
@@ -49,20 +50,37 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form method="post" action="insereProduto">
-					<fieldset>
-						<legend>Cadastro de Produtos</legend>
-						<p><label for="cNome">Nome:<input type="text" name="p.nome" id="cNome"/></label></p>
-						<p><label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao"></textarea></label></p>
-						<p><label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco"/></label></p>
-						
-						<button type="submit">Cadastrar</button>
-						
+				<form id="lista-produto" method="get" action="<c:url value="/produtos/busca"/>">
+					<fieldset id="form-lista-produto">
+						<legend>Produto</legend>
+						<button type="submit">Pesquisar</button>
+						<input type="text" id="cPesquisa" name="nome" size="70">
 					</fieldset>
 				</form>
+				<div id="tbl-produto">
+					<table id="produto">
+						<thead>
+							<tr>
+								<th>Cod</th>
+								<th>Nome</th>
+								<th>Descricao</th>
+								<th>Preço</th>
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach items="${produtoList}" var="produto">
+								<tr>
+									<td>${produto.id}</td>
+									<td>${produto.nome}</td>
+									<td>${produto.descricao}</td>
+									<td>${produto.preco}</td>
+								</tr>
+							</c:forEach>
+						</tbody>
+					</table>
+				</div>
 			</div>
-			
 		</div>
-	</div>
+		</div>
 </body>
 </html>

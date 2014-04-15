@@ -117,3 +117,51 @@ footer#rodape {
 	border-top: 1px solid rgba(0,0,0, .5);
 	
 }
+
+table#cliente {
+	border-collapse:collapse; 
+	border:1px solid rgba(0,0,0, .5); 
+	border-spacing: 0px;
+	background-color:#FFFFFF;
+	margin: auto;
+	margin-top: 10px;
+}
+
+table#cliente td {
+	border: 1px solid;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#tbl-cliente {
+	margin: auto;
+	width:750px; 
+	height:300px;
+	overflow:auto;
+	
+}
+
+table#produto {
+	border-collapse:collapse; 
+	border:1px solid rgba(0,0,0, .5); 
+	border-spacing: 0px;
+	background-color:#FFFFFF;
+	margin: auto;
+	margin-top: 10px;
+}
+
+table#produto td {
+	border: 1px solid;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#tbl-produto {
+	margin: auto;
+	width:750px; 
+	height:300px;
+	overflow:auto;
+	
+}

@@ -19,9 +19,12 @@ public class ProdutosController {
 	}
 
 	
-	public List<Produto> lista() {
-		return prodDAO.listar();
+	public List<Produto> busca(String nome) {
+		result.include(nome);
+		return prodDAO.listar(nome);
 	}
+	
+	
 	
 	public void insereProduto(Produto p) {
 		this.prodDAO.insere(p);
@@ -29,6 +32,10 @@ public class ProdutosController {
 	}
 	
 	public void formularioProduto() {
+		
+	}
+	
+	public void lista() {
 		
 	}
 }

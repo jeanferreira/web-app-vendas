@@ -46,6 +46,15 @@ public class ClienteDAO {
 		lista = fabrica.getSession().createCriteria(Cliente.class)
 				.add(Restrictions.ilike("nome", cnome, MatchMode.ANYWHERE))
 				.list();
+			if(lista.isEmpty()) {
+				lista = listaTudo();
+			}
+		return lista;
+	}
+	
+	public List<Cliente> listaTudo() {
+		lista = new ArrayList<Cliente>();
+		lista = fabrica.getSession().createCriteria(Cliente.class).list();
 		return lista;
 	}
 
