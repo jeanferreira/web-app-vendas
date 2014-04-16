@@ -9,14 +9,38 @@ import org.hibernate.Transaction;
 import model.Usuario;
 
 import br.com.caelum.vraptor.ioc.Component;
+import br.com.caelum.vraptor.ioc.SessionScoped;
 
 @Component
+@SessionScoped
 public class UsuarioDAO {
 	
+	private Usuario user;	
 	private final FabricaSessao fabrica;
 	
-	public UsuarioDAO(FabricaSessao fabrica) {
-		this.fabrica = fabrica;		
+	public UsuarioDAO(FabricaSessao fabrica, Usuario user) {
+		this.fabrica = fabrica;
+		this.user = user;
+	}
+	
+	public Usuario getUser() {
+		return user;
+	}
+
+	public void setUser(Usuario user) {
+		this.user = user;
+	}
+
+	public FabricaSessao getFabrica() {
+		return fabrica;
+	}
+	
+	public boolean isLogged() {
+		return user != null;
+	}
+	
+	public void logout() {
+		user = null;
 	}
 
 	@SuppressWarnings("static-access")

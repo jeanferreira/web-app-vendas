@@ -9,7 +9,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
 <script language="javascript" src="../funcoes.js"></script>
-<title>Produtos</title>
+<title>Softex-Produto</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -18,6 +18,8 @@
 			<hgroup>
 				<h1>Softex</h1>
 				<h2>Orange</h2>
+				<h6><span>Usuário:</span></h6>
+				<h6>${usuarioDAO.user.login}</h6>
 			</hgroup>
 			<nav id="menu-principal">
   				<ul class="menu">
@@ -55,8 +57,8 @@
 					<fieldset>
 						<legend>Cadastro de Produtos</legend>
 						<p><label for="cNome">Nome:<input type="text" name="p.nome" id="cNome" class="required" minlength="3"/></label></p>
-						<p><label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao"></textarea></label></p>
-						<p><label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco"/></label></p>
+						<p><label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao" class="required" maxlength="40"></textarea></label></p>
+						<p><label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco" class="required" min="0"/></label></p>
 						
 						<button type="submit">Cadastrar</button>
 						

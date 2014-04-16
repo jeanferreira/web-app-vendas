@@ -10,7 +10,7 @@
 <script language="javascript" src="../funcoes.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
-<title>Cliente</title>
+<title>Softex-Cliente</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -19,6 +19,8 @@
 			<hgroup>
 				<h1>Softex</h1>
 				<h2>Orange</h2>
+				<h6><span>Usuário:</span></h6>
+				<h6>${usuarioDAO.user.login}</h6>
 			</hgroup>
 			<nav id="menu-principal">
   				<ul class="menu">

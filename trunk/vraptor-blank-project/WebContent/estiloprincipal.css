@@ -45,6 +45,19 @@ header#cabecalho h2 {
 	margin: 20px;
 }
 
+header#cabecalho h6 {
+	margin-top: -100px;
+	margin-right: 180px;
+	float: right;
+}
+
+header#cabecalho h6 span {
+	float: right;
+	margin-right: 50px;
+}
+
+
+
 nav#menu-principal {
 	float: left;
 	width: 900px;

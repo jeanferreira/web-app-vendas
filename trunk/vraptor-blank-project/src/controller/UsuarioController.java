@@ -30,6 +30,7 @@ public class UsuarioController {
 			validator.onErrorUsePageOf(PrincipalController.class).error();
 		} else {
 			if (usDAO.connect(u)) {
+				this.usDAO.setUser(u);
 				result.use(Results.logic())
 						.forwardTo(PrincipalController.class).boasVindas();
 			} else {
@@ -39,6 +40,7 @@ public class UsuarioController {
 	}
 
 	public void sair() {
+		this.usDAO.logout();
 		result.redirectTo(UsuarioController.class).login();
 	}
 

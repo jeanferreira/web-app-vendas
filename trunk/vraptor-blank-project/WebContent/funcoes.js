@@ -20,3 +20,11 @@
 			 });
 
  }
+ 
+ function  validaUsuario() {
+	 if ($.get("UsarioController.connect") == true) {
+		 alert("Entrou");
+	 } else {
+		 alert("Login e/ou Senha Incorretos!");
+	 }
+ }

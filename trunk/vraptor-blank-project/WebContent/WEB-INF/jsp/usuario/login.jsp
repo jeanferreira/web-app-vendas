@@ -14,7 +14,7 @@
 			<h5><a href="usuario/formularioUsuario">Ainda não é Cadastrado?</a></h5>		
 		</header>
 		<div id="corpo">
-			<form id="login" method="post"  action="usuario/logar">
+			<form id="login" method="post"  action="usuario/logar" onclick="validaUsuario();">
 				<fieldset id="usuario">
 					<legend>Identificação de Usuário</legend>
 					<p><label for="cLogin">Login:</label><input type="text" name="u.login" id="cLogin" size="25"/></p>

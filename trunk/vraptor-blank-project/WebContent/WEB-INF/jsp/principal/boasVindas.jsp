@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Softex</title>
+<title>Softex-Bem Vindo</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -15,6 +15,8 @@
 			<hgroup>
 				<h1>Softex</h1>
 				<h2>Orange</h2>
+				<h6><span>Usuário:</span></h6>
+				<h6>${usuarioDAO.user.login}</h6>
 			</hgroup>
 			<nav id="menu-principal">
   				<ul class="menu">
@@ -42,7 +44,7 @@
   						</ul>
   					</li>
   						
-  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="../usuario/sair">Sair</a></span></li>
+  					<li onmouseover="mudaFoto('../sair.png')" onmouseout="mudaFoto('../icone-peq.png')"><span><a href="${pageContext.request.contextPath}/usuario/sair">Sair</a></span></li>
 				</ul>
 			</nav>
 		</header>
