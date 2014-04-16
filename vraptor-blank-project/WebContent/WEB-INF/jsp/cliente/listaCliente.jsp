@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Cliente</title>
+<title>Softex-Cliente</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -17,6 +17,8 @@
 			<hgroup>
 				<h1>Softex</h1>
 				<h2>Orange</h2>
+				<h6><span>Usuário:</span></h6>
+				<h6>${usuarioDAO.user.login}</h6>
 			</hgroup>
 			<nav id="menu-principal">
   				<ul class="menu">
