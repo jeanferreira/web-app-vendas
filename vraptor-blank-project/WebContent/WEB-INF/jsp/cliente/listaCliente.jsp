@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Produto</title>
+<title>Cliente</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -32,7 +32,7 @@
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
   							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
-  							<span><li><a href="../produtos/lista">Listar</a></li></span>
+  							<span><li><a href="../produtos/listaProduto">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -50,9 +50,9 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form id="lista-produto" method="get" action="<c:url value="/produtos/busca"/>">
-					<fieldset id="form-lista-produto">
-						<legend>Produto</legend>
+				<form id="lista-cliente" method="get" action="<c:url value="/cliente/buscaCliente"/>">
+					<fieldset id="form-lista-cliente">
+						<legend>Cliente</legend>
 						<button type="submit">Pesquisar</button>
 						<input type="text" id="cPesquisa" name="nome" size="70">
 					</fieldset>

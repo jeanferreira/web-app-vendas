@@ -19,7 +19,7 @@ public class ProdutosController {
 	}
 
 	
-	public List<Produto> busca(String nome) {
+	public List<Produto> buscaProduto(String nome) {
 		result.include(nome);
 		return prodDAO.listar(nome);
 	}
@@ -28,14 +28,14 @@ public class ProdutosController {
 	
 	public void insereProduto(Produto p) {
 		this.prodDAO.insere(p);
-		result.redirectTo(ProdutosController.class).lista();
+		result.redirectTo(ProdutosController.class).listaProduto();
 	}
 	
 	public void formularioProduto() {
 		
 	}
 	
-	public void lista() {
+	public void listaProduto() {
 		
 	}
 }

@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Cliente</title>
+<title>Produto</title>
 </head>
 <body>
 	<div id="conteudo">
@@ -24,7 +24,7 @@
   					<li onmouseover="mudaFoto('../clientes.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Clientes</a>
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
-  							<span><li><a href="../cliente/lista">Listar</a></li></span>
+  							<span><li><a href="../cliente/listaCliente">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -32,7 +32,7 @@
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
   							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
-  							<span><li><a href="../produtos/lista">Listar</a></li></span>
+  							<span><li><a href="../produtos/listaProduto">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -50,41 +50,15 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form id="lista-cliente" method="get" action="<c:url value="/cliente/busca"/>">
-					<fieldset id="form-lista-cliente">
-						<legend>Cliente</legend>
+				<form id="lista-produto" method="get" action="<c:url value="/produtos/buscaProduto"/>">
+					<fieldset id="form-lista-produto">
+						<legend>Produto</legend>
 						<button type="submit">Pesquisar</button>
 						<input type="text" id="cPesquisa" name="nome" size="70">
 					</fieldset>
 				</form>
-				<div id="tbl-cliente">
-					<table id="cliente">
-						<thead>
-							<tr>
-								<th>Cod</th>
-								<th>Nome</th>
-								<th>Cpf</th>
-								<th>Email</th>
-								<th>Telefone</th>
-								<th>Endereço</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${clienteList}" var="cliente">
-								<tr>
-									<td>${cliente.id}</td>
-									<td>${cliente.nome}</td>
-									<td>${cliente.cpf}</td>
-									<td>${cliente.email}</td>
-									<td>${cliente.telefone}</td>
-									<td>${cliente.endereco}</td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-				</div>
 			</div>
 		</div>
-		</div>
+	</div>
 </body>
 </html>
