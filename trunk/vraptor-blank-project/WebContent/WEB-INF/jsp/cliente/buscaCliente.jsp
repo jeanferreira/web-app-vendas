@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
 <script language="javascript" src="../funcoes.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
 <title>Cliente</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
   					<li onmouseover="mudaFoto('../clientes.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Clientes</a>
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
-  							<span><li><a href="../cliente/lista">Listar</a></li></span>
+  							<span><li><a href="../cliente/listaCliente">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -32,7 +34,7 @@
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
   							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
-  							<span><li><a href="#">Listar</a></li></span>
+  							<span><li><a href="../produtos/listaProduto">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -50,30 +52,34 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form id="lista-produto" method="get" action="<c:url value="/produtos/busca"/>">
-					<fieldset id="form-lista-produto">
-						<legend>Produto</legend>
+				<form id="lista-cliente" method="get" action="<c:url value="/cliente/busca"/>">
+					<fieldset id="form-lista-cliente">
+						<legend>Cliente</legend>
 						<button type="submit">Pesquisar</button>
 						<input type="text" id="cPesquisa" name="nome" size="70">
 					</fieldset>
 				</form>
-				<div id="tbl-produto">
-					<table id="produto">
+				<div id="tbl-cliente">
+					<table id="cliente">
 						<thead>
 							<tr>
 								<th>Cod</th>
 								<th>Nome</th>
-								<th>Descricao</th>
-								<th>Preço</th>
+								<th>Cpf</th>
+								<th>Email</th>
+								<th>Telefone</th>
+								<th>Endereço</th>
 							</tr>
 						</thead>
 						<tbody>
-							<c:forEach items="${produtoList}" var="produto">
+							<c:forEach items="${clienteList}" var="cliente">
 								<tr>
-									<td>${produto.id}</td>
-									<td>${produto.nome}</td>
-									<td>${produto.descricao}</td>
-									<td>${produto.preco}</td>
+									<td>${cliente.id}</td>
+									<td>${cliente.nome}</td>
+									<td>${cliente.cpf}</td>
+									<td>${cliente.email}</td>
+									<td>${cliente.telefone}</td>
+									<td>${cliente.endereco}</td>
 								</tr>
 							</c:forEach>
 						</tbody>

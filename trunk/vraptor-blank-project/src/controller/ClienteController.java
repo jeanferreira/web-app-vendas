@@ -24,7 +24,7 @@ public class ClienteController {
 		this.result.redirectTo(PrincipalController.class).boasVindas();
 	}
 	
-	public List<Cliente> busca(String nome) {
+	public List<Cliente> buscaCliente(String nome) {
 		result.include("nome",nome);
 		return cDAO.lista(nome);
 	}
@@ -33,7 +33,7 @@ public class ClienteController {
 		
 	}
 	
-	public void lista() {
+	public void listaCliente() {
 		
 	}
 	

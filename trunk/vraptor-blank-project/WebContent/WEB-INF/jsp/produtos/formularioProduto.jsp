@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
 <script language="javascript" src="../funcoes.js"></script>
 <title>Produtos</title>
 </head>
@@ -23,15 +25,15 @@
   					<li onmouseover="mudaFoto('../clientes.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Clientes</a>
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
-  							<span><li><a href="../cliente/lista">Listar</a></li></span>
+  							<span><li><a href="../cliente/listaCliente">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
   					</li>
   					<li onmouseover="mudaFoto('../produto.png')" onmouseout="mudaFoto('../icone-peq.png')"><a href="#">Produtos</a>
   						<ul class="sub-menu">
-  							<span><li><a href="#">Cadastrar</a></li></span>
-  							<span><li><a href="#">Listar</a></li></span>
+  							<span><li><a href="../produtos/formularioProduto">Cadastrar</a></li></span>
+  							<span><li><a href="../produtos/listaProduto">Listar</a></li></span>
   							<span><li><a href="#">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
@@ -49,10 +51,10 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form method="post" action="insereProduto">
+				<form id="form-produto" method="post" action="insereProduto" onclick="validaProduto();">
 					<fieldset>
 						<legend>Cadastro de Produtos</legend>
-						<p><label for="cNome">Nome:<input type="text" name="p.nome" id="cNome"/></label></p>
+						<p><label for="cNome">Nome:<input type="text" name="p.nome" id="cNome" class="required" minlength="3"/></label></p>
 						<p><label for="cDescricao">Descrição:<textarea name="p.descricao" id="cDescricao"></textarea></label></p>
 						<p><label for="cPreco">Preço R$:<input type="text" name="p.preco" id="cPreco"/></label></p>
 						
