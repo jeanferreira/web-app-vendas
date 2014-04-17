@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <link rel="stylesheet" type="text/css" href="../formulario.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
 <script language="javascript" src="../funcoes.js"></script>
 <title>Softex-Cliente</title>
 </head>
@@ -26,7 +28,7 @@
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
   							<span><li><a href="../cliente/listaCliente">Listar</a></li></span>
-  							<span><li><a href="#">Alterar</a></li></span>
+  							<span><li><a href="../cliente/alteraCliente">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
   					</li>
@@ -51,7 +53,7 @@
 		</header>
 		<div id="corpo">
 			<div id="conteudo-corpo">
-				<form method="post" action="insereCliente">
+				<form id="form-cliente" method="post" action="insereCliente" onclick="validaCliente();">
 					<fieldset id="infcliente">
 						<legend>Informações do Cliente</legend>
 						<p><label for="cNome">Nome:<input type="text" name="c.nome" id="cNome" size="60" maxlength="60"/></label></p>

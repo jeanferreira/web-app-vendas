@@ -28,7 +28,7 @@
   						<ul class="sub-menu">
   							<span><li><a href="../cliente/formularioCliente">Cadastrar</a></li></span>
   							<span><li><a href="../cliente/listaCliente">Listar</a></li></span>
-  							<span><li><a href="#">Alterar</a></li></span>
+  							<span><li><a href="../cliente/alteraCliente">Alterar</a></li></span>
   							<span><li><a href="#">Remover</a></li></span>
   						</ul>
   					</li>
