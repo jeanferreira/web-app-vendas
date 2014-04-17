@@ -37,4 +37,8 @@ public class ClienteController {
 		
 	}
 	
+	public void alteraCliente() {
+		
+	}
+	
 }
