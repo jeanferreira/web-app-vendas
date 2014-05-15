@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
 <script language="javascript" src="../funcoes.js"></script>
-<title>Softex-Bem Vindo</title>
+<title>Nova Venda</title>
 </head>
 <body>
 	<div id="conteudo">
